@@ -4,9 +4,9 @@ public class Node {
 }
 
 public int countDescendents (Node node) {
-	//Declaring a linkList for the list of nodes
-	LinkList<Node> list = new LinkList<Node>();
 	int numDescendent;
+	//Declaring a linkedList for the list of nodes
+	LinkedList<Node> list = new LinkedList<Node>();
 	//If node has descendants, push it onto the list.
 	if(node.firstChild != NULL && node != NULL) {
 		list.push(node.firstChild);
